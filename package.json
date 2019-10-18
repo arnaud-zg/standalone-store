@@ -8,10 +8,12 @@
     "dist"
   ],
   "scripts": {
-    "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test",
-    "lint": "tsdx lint"
+    "lint": "tsdx lint",
+    "start": "tsdx watch",
+    "test:coverage:report": "yarn run test:coverage && codecov -f coverage/*.json",
+    "test:coverage": "tsdx test --coverage",
+    "test": "tsdx test"
   },
   "peerDependencies": {},
   "devDependencies": {
