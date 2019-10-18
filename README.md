@@ -2,6 +2,9 @@
 
 Middleware for redux store in standalone mode
 
+[![Build Status](https://travis-ci.org/arnaud-zg/standalone-store.svg?branch=develop)](https://travis-ci.org/arnaud-zg/standalone-store)
+[![codecov](https://codecov.io/gh/arnaud-zg/standalone-store/branch/develop/graph/badge.svg)](https://codecov.io/gh/arnaud-zg/standalone-store)
+
 ## Getting Started
 
 These instructions will let you know how to use the library.
