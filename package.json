@@ -1,8 +1,8 @@
 {
-  "name": "mylib",
+  "name": "standalone-store",
   "version": "0.1.0",
   "main": "dist/index.js",
-  "module": "dist/mylib.esm.js",
+  "module": "dist/standalone-store.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
