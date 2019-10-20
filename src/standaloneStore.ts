@@ -1,9 +1,12 @@
 import { AnyAction, StoreCreator } from 'redux'
 
-type Listener = (action: AnyAction | null, state: any) => void
+type Listener<TStoreState> = (
+  action: AnyAction | null,
+  state: TStoreState
+) => void
 
-export class StandaloneStore {
-  private listeners: Array<Listener>
+export class StandaloneStore<TStoreState> {
+  private listeners: Array<Listener<TStoreState>>
   private store: ReturnType<StoreCreator>
   private lastAction: AnyAction | null
 
@@ -21,7 +24,7 @@ export class StandaloneStore {
   }
 
   storeUpdate = () => {
-    const state = this.store.getState()
+    const state = this.store.getState() as TStoreState
 
     if (this.listeners.length) {
       this.listeners.forEach(listener => {
@@ -30,7 +33,7 @@ export class StandaloneStore {
     }
   }
 
-  subscribe(listener: Listener) {
+  subscribe(listener: Listener<TStoreState>) {
     this.listeners.push(listener)
   }
 }
