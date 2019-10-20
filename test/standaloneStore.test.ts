@@ -1,11 +1,11 @@
-import { configureStore, initialState, putCredentials } from 'ts-foursquare'
+import { configureStore, putCredentials, TState } from 'ts-foursquare'
 import { getType } from 'typesafe-actions'
 import { StandaloneStore } from '../src/standaloneStore'
 
 describe('StandaloneStore', () => {
   const store = configureStore()
   it(`should work without any listener`, () => {
-    const standaloneStore = new StandaloneStore<typeof initialState>({ store })
+    const standaloneStore = new StandaloneStore<TState>({ store })
 
     standaloneStore.dispatchAction(
       putCredentials({
@@ -16,7 +16,7 @@ describe('StandaloneStore', () => {
   })
 
   it(`should make a snapshot of store after of action: putCredentials`, done => {
-    const standaloneStore = new StandaloneStore<typeof initialState>({ store })
+    const standaloneStore = new StandaloneStore<TState>({ store })
 
     standaloneStore.subscribe((action, state) => {
       expect(state).toMatchSnapshot()
