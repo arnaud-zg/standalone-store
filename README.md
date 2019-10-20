@@ -32,6 +32,38 @@ Using yarn:
 yarn add --dev standalone-store
 ```
 
+## Usage
+
+Once you have instanciated your store, you can use `standalone-store` as a middleware.
+
+### Simple
+
+If you don't know what is `configureStore` take a look at redux documentation (https://redux.js.org/recipes/configuring-your-store#the-solution-configurestore).
+
+```js
+  const store = configureStore()
+  const standaloneStore = new StandaloneStore<TState>({ store })
+```
+
+#### Dispatch an redux action
+
+For example we have an action `getUser`, we want to display this action with a payload.
+
+```js
+  const payload = { userId: '1234' }
+  standaloneStore.dispatchAction(
+    getUser(payload)
+  )
+```
+
+#### Subscribe to an event
+
+```js
+  standaloneStore.subscribe((action, state) => {
+    console.log({ action, state })
+  })
+```
+
 ## Running the tests
 
 Tests are written with jest
