@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/arnaud-zg/standalone-store/compare/v0.1.2...v0.1.3) (2019-10-25)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency ts-foursquare to v0.3.15 ([#13](https://github.com/arnaud-zg/standalone-store/issues/13)) ([031e761](https://github.com/arnaud-zg/standalone-store/commit/031e7614738765e5cbccec703170986ad5d63652))
+* **deps:** update dependency ts-foursquare to v0.3.16 ([#14](https://github.com/arnaud-zg/standalone-store/issues/14)) ([46a794b](https://github.com/arnaud-zg/standalone-store/commit/46a794bc3c41f7bbe31f3826f2870cfa0dd676da))
+* **deps:** update node.js to v10.17.0 ([#12](https://github.com/arnaud-zg/standalone-store/issues/12)) ([3261bbf](https://github.com/arnaud-zg/standalone-store/commit/3261bbf1fd08e985bbd8a7e95edce5f476178699))
+
+
+### ⚠️ Tests
+
+* **unit:** use TState instead of initialState ([#10](https://github.com/arnaud-zg/standalone-store/issues/10)) ([fcb54fa](https://github.com/arnaud-zg/standalone-store/commit/fcb54fa171799ba130fcb94e3c757affdbdd0e01))
+
 ### [0.1.2](https://github.com/arnaud-zg/standalone-store/compare/v0.1.1...v0.1.2) (2019-10-20)
 
 
