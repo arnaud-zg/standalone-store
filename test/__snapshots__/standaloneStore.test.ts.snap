@@ -9,6 +9,7 @@ Object {
     },
     "status": true,
   },
+  "request": Object {},
   "status": Object {},
   "venues": Object {
     "categories": Object {},
@@ -19,6 +20,7 @@ Object {
     "recommendedPlaces": Object {},
     "similarVenues": Object {},
     "trendingEntities": Object {},
+    "venuesListed": Object {},
   },
 }
 `;
