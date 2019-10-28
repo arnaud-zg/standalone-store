@@ -9,6 +9,9 @@ Object {
     },
     "status": true,
   },
+  "lists": Object {
+    "entities": Object {},
+  },
   "request": Object {},
   "status": Object {},
   "venues": Object {
