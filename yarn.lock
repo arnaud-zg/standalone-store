@@ -5599,9 +5599,9 @@ trim-off-newlines@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
 
-ts-foursquare@0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.4.3.tgz#e46c5851736ea5fe64628f60c1be42285810e516"
+ts-foursquare@0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.4.5.tgz#4789286354b7883d301b20800974e74ecc845cd4"
   dependencies:
     http-response-status "0.0.10"
     isomorphic-fetch "2.2.1"
