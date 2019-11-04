@@ -12,6 +12,9 @@ Object {
   "lists": Object {
     "entities": Object {},
   },
+  "photos": Object {
+    "entities": Object {},
+  },
   "request": Object {},
   "status": Object {},
   "venues": Object {
