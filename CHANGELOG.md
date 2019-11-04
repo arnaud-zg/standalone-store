@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/arnaud-zg/standalone-store/compare/v0.1.4...v0.1.5) (2019-11-04)
+
+
+### 🐛 Bug Fixes
+
+* **project:** add repository url ([#24](https://github.com/arnaud-zg/standalone-store/issues/24)) ([063c07c](https://github.com/arnaud-zg/standalone-store/commit/063c07c1e95dd11426230c1beb9bcc75f8d92755))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency ts-foursquare to v0.4.2 ([#20](https://github.com/arnaud-zg/standalone-store/issues/20)) ([9fb5e16](https://github.com/arnaud-zg/standalone-store/commit/9fb5e1633a78b51f32cb064d89c7ae3cf07846cd))
+* **deps:** update dependency ts-foursquare to v0.4.3 ([#22](https://github.com/arnaud-zg/standalone-store/issues/22)) ([f5e4811](https://github.com/arnaud-zg/standalone-store/commit/f5e481126f6cb535bd2eb8d0353bfcc7f84bb4b3))
+* **deps:** update dependency ts-foursquare to v0.4.5 ([#23](https://github.com/arnaud-zg/standalone-store/issues/23)) ([08d1e2e](https://github.com/arnaud-zg/standalone-store/commit/08d1e2e36425a4c9c1c655791880793054b093ef))
+
+
+### 📖 Documentations
+
+* **project:** add project keywords ([#21](https://github.com/arnaud-zg/standalone-store/issues/21)) ([6bf27eb](https://github.com/arnaud-zg/standalone-store/commit/6bf27eb162a88712fe3695b4a283cedd1d79738d))
+
 ### [0.1.4](https://github.com/arnaud-zg/standalone-store/compare/v0.1.3...v0.1.4) (2019-10-30)
 
 
