@@ -5599,9 +5599,9 @@ trim-off-newlines@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
 
-ts-foursquare@0.4.5:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.4.5.tgz#4789286354b7883d301b20800974e74ecc845cd4"
+ts-foursquare@0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.4.6.tgz#cbbdd8b9df3ffc8b1f9f400e0c029476426b5310"
   dependencies:
     http-response-status "0.0.10"
     isomorphic-fetch "2.2.1"
@@ -5610,7 +5610,7 @@ ts-foursquare@0.4.5:
     redux-devtools-extension "2.13.8"
     redux-observable "1.2.0"
     rxjs "6.5.3"
-    typesafe-actions "4.4.2"
+    typesafe-actions "5.1.0"
 
 ts-jest@^24.0.2:
   version "24.1.0"
@@ -5732,9 +5732,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typesafe-actions@4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/typesafe-actions/-/typesafe-actions-4.4.2.tgz#8f817c479d12130b5ebb442032968b2a18929e1a"
+typesafe-actions@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/typesafe-actions/-/typesafe-actions-5.1.0.tgz#9afe8b1e6a323af1fd59e6a57b11b7dd6623d2f1"
 
 typescript@3.7.2:
   version "3.7.2"
