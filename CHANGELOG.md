@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/arnaud-zg/standalone-store/compare/v0.1.5...v0.1.6) (2019-11-07)
+
+
+### 🐛 Bug Fixes
+
+* **project:** update package.json ([#29](https://github.com/arnaud-zg/standalone-store/issues/29)) ([9c644a4](https://github.com/arnaud-zg/standalone-store/commit/9c644a4db5fcacf72b2c7febf5ecbd2ffc3f613d))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v24.0.22 ([#27](https://github.com/arnaud-zg/standalone-store/issues/27)) ([c9c7f41](https://github.com/arnaud-zg/standalone-store/commit/c9c7f415be19e228fe7bd9eff152df50ee4df099))
+* **deps:** update dependency ts-foursquare to v0.4.6 ([#26](https://github.com/arnaud-zg/standalone-store/issues/26)) ([f7800e7](https://github.com/arnaud-zg/standalone-store/commit/f7800e7073adee6586003ef936aa31e62e810799))
+* **deps:** update dependency ts-foursquare to v0.4.7 ([#28](https://github.com/arnaud-zg/standalone-store/issues/28)) ([d224f2f](https://github.com/arnaud-zg/standalone-store/commit/d224f2f21bd577bb51eb1627023b6212bbdf391c))
+* **deps:** update dependency typescript to v3.7.2 ([#25](https://github.com/arnaud-zg/standalone-store/issues/25)) ([96c2255](https://github.com/arnaud-zg/standalone-store/commit/96c2255427c32af284579905cea3eebcfeedfae8))
+
 ### [0.1.5](https://github.com/arnaud-zg/standalone-store/compare/v0.1.4...v0.1.5) (2019-11-04)
 
 
