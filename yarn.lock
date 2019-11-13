@@ -2760,9 +2760,9 @@ html-encoding-sniffer@^1.0.2:
   dependencies:
     whatwg-encoding "^1.0.1"
 
-http-response-status@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/http-response-status/-/http-response-status-0.0.10.tgz#e8af887ab74b06cdb5b5608ea098a1eecc0ab152"
+http-response-status@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/http-response-status/-/http-response-status-0.0.11.tgz#47fd9b8450c5bd25b84461034fc3569f96695d17"
 
 http-signature@~1.2.0:
   version "1.2.0"
@@ -4403,9 +4403,9 @@ path-parse@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
 
-path-to-regexp@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-3.1.0.tgz#f45a9cc4dc6331ae8f131e0ce4fde8607f802367"
+path-to-regexp@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-5.0.0.tgz#e56dd58778b9dc06e76f0f3e39e741bbddc0bd26"
 
 path-type@^1.0.0:
   version "1.1.0"
@@ -5595,13 +5595,13 @@ trim-off-newlines@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
 
-ts-foursquare@0.4.7:
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.4.7.tgz#739c89db4159ae6e0fccea6cc03b6b95c0115b6d"
+ts-foursquare@0.4.8:
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.4.8.tgz#5579908a5f79fc24f62d2aa04fd3ef1ff74f71bc"
   dependencies:
-    http-response-status "0.0.10"
+    http-response-status "0.0.11"
     isomorphic-fetch "2.2.1"
-    path-to-regexp "^3.1.0"
+    path-to-regexp "^5.0.0"
     redux "4.0.4"
     redux-devtools-extension "2.13.8"
     redux-observable "1.2.0"
