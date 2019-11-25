@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/arnaud-zg/standalone-store/compare/v0.1.7...v0.1.8) (2019-11-25)
+
+
+### 🖋 Features
+
+* **async-actions:** add tool that let you dispatch actions and wait for response with promise ([#36](https://github.com/arnaud-zg/standalone-store/issues/36)) ([c8e8c69](https://github.com/arnaud-zg/standalone-store/commit/c8e8c697e532da0e42fe5a4bc66185ef29a0ccbb))
+
 ### [0.1.7](https://github.com/arnaud-zg/standalone-store/compare/v0.1.6...v0.1.7) (2019-11-22)
 
 
