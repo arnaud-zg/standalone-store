@@ -36,9 +36,57 @@ yarn add --dev standalone-store
 
 Once you have instanciated your store, you can use `standalone-store` as a middleware.
 
-### Simple
-
 If you don't know what is `configureStore` take a look at redux documentation (https://redux.js.org/recipes/configuring-your-store#the-solution-configurestore).
+
+## Simple
+
+### Callback
+
+```js
+const getUser = () => {
+  return dispatchActionsAndWaitResponse({
+    actions: [
+      getUser(payload),
+    ],
+    store: configureStore(),
+    selector: userSelector,
+  })
+  .then(data => {
+    console.log(data)
+  })
+  .catch(error => {
+    console.log(error)
+  })
+  .finally(() => {
+    // Do something ...
+  })
+}
+```
+
+### Async / Await
+
+```js
+async getUser = () => {
+  try {
+    const data = await dispatchActionsAndWaitResponse({
+      actions: [
+        getUser(payload),
+      ],
+      store: configureStore(),
+      selector: userSelector,
+    })
+    console.log(data)
+  }
+  catch (error) {
+    console.log(error)
+  }
+  finally {
+    // Do something
+  }
+}
+```
+
+### Advanced
 
 ```js
   const store = configureStore()
@@ -61,6 +109,8 @@ For example we have an action `getUser`, we want to display this action with a p
 ```js
   standaloneStore.subscribe((action, state) => {
     console.log({ action, state })
+    // Don't forget to remove listener once you don't need it anymore
+    standaloneStore.listenersPop()
   })
 ```
 

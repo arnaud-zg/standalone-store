@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`asyncAction should wait end of putCredentials with promise and make a snapshot of store 1`] = `"You should at least give one action."`;
+
+exports[`asyncAction should wait end of putCredentials with promise and make a snapshot of store 2`] = `
+Object {
+  "clientId": "123",
+  "clientSecret": "456",
+}
+`;
