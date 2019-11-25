@@ -33,7 +33,15 @@ export class StandaloneStore<TStoreState> {
     }
   }
 
-  subscribe(listener: Listener<TStoreState>) {
+  getListeners = () => this.listeners
+
+  listenersPop = () => {
+    if (this.listeners.length) {
+      this.listeners.pop()
+    }
+  }
+
+  subscribe = (listener: Listener<TStoreState>) => {
     this.listeners.push(listener)
   }
 }

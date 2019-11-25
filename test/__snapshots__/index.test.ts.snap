@@ -3,5 +3,6 @@
 exports[`projectPackage should have a list of method 1`] = `
 Object {
   "StandaloneStore": [Function],
+  "dispatchActionsAndWaitResponse": [Function],
 }
 `;

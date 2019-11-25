@@ -1,6 +1,6 @@
 import { configureStore, putCredentials, TState } from 'ts-foursquare'
 import { getType } from 'typesafe-actions'
-import { StandaloneStore } from '../src/standaloneStore'
+import { StandaloneStore } from '../src'
 
 describe('StandaloneStore', () => {
   const store = configureStore()
@@ -15,6 +15,17 @@ describe('StandaloneStore', () => {
     )
   })
 
+  it(`should make a snapshot of registered listeners`, () => {
+    const standaloneStore = new StandaloneStore<TState>({ store })
+    standaloneStore.subscribe(() => {})
+
+    const listeners = standaloneStore.getListeners()
+    expect(listeners).toMatchSnapshot()
+
+    standaloneStore.listenersPop()
+    standaloneStore.listenersPop()
+  })
+
   it(`should make a snapshot of store after of action: putCredentials`, done => {
     const standaloneStore = new StandaloneStore<TState>({ store })
 
@@ -22,6 +33,7 @@ describe('StandaloneStore', () => {
       expect(state).toMatchSnapshot()
 
       if (action && action.type === getType(putCredentials)) {
+        standaloneStore.listenersPop()
         done()
       }
     })
