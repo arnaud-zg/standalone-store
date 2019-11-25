@@ -1,7 +1,7 @@
 {
   "name": "standalone-store",
   "version": "0.1.8",
-  "description": "Middleware for redux store in standalone mode",
+  "description": "Middleware for redux store in standalone mode for nodejs environment",
   "main": "dist/index.js",
   "module": "dist/standalone-store.esm.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,8 @@
   "keywords": [
     "redux",
     "redux-store",
-    "typescript"
+    "typescript",
+    "nodejs"
   ],
   "scripts": {
     "build": "tsdx build",
