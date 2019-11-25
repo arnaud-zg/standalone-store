@@ -1,11 +1,19 @@
 # Standalone Store
 
-Middleware for redux store in standalone mode
+Middleware for redux store in standalone mode for nodejs environment
 
 [![Build Status](https://travis-ci.org/arnaud-zg/standalone-store.svg?branch=develop)](https://travis-ci.org/arnaud-zg/standalone-store)
 [![codecov](https://codecov.io/gh/arnaud-zg/standalone-store/branch/develop/graph/badge.svg)](https://codecov.io/gh/arnaud-zg/standalone-store)
 
 ## Getting Started
+
+### Motivation
+
+Nowadays many websites use SPA architecture:
+
+More and more JavaScript is being used.
+A lot of code on the client side.
+Some code can be shared with back-end.
 
 These instructions will let you know how to use the library.
 
