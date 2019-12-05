@@ -2760,9 +2760,9 @@ html-encoding-sniffer@^1.0.2:
   dependencies:
     whatwg-encoding "^1.0.1"
 
-http-response-status@0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/http-response-status/-/http-response-status-0.0.11.tgz#47fd9b8450c5bd25b84461034fc3569f96695d17"
+http-response-status@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/http-response-status/-/http-response-status-0.1.0.tgz#2e7aea9613ba0c51a4ce6208163549826e1aadcd"
 
 http-signature@~1.2.0:
   version "1.2.0"
@@ -5609,11 +5609,11 @@ trim-off-newlines@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
 
-ts-foursquare@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.5.0.tgz#4b50263860000a57889937dfeb02c5f496900ed1"
+ts-foursquare@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.5.1.tgz#783233adb2704a3938b35df9c53538e6be446670"
   dependencies:
-    http-response-status "0.0.11"
+    http-response-status "0.1.0"
     isomorphic-fetch "2.2.1"
     path-to-regexp "^6.0.0"
     redux "4.0.4"
