@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/arnaud-zg/standalone-store/compare/v0.1.9...v0.1.10) (2019-12-09)
+
+
+### 📦 Build System
+
+* use fixed version of serialize-javascript ([#41](https://github.com/arnaud-zg/standalone-store/issues/41)) ([8927818](https://github.com/arnaud-zg/standalone-store/commit/8927818865944a0ec3ff1922f58d433e029d8bb3))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency ts-foursquare to v0.5.0 ([#38](https://github.com/arnaud-zg/standalone-store/issues/38)) ([b27cf6d](https://github.com/arnaud-zg/standalone-store/commit/b27cf6d735df99af4847afd4f238d1dd70d88387))
+* **deps:** update dependency ts-foursquare to v0.5.1 ([#40](https://github.com/arnaud-zg/standalone-store/issues/40)) ([2ca4f44](https://github.com/arnaud-zg/standalone-store/commit/2ca4f44532b460e669ba245291701651e1cc85e1))
+* **deps:** update dependency typescript to v3.7.3 ([#39](https://github.com/arnaud-zg/standalone-store/issues/39)) ([54db3f4](https://github.com/arnaud-zg/standalone-store/commit/54db3f42ba2ca94986a382f58bdde178882c5d46))
+
 ### [0.1.9](https://github.com/arnaud-zg/standalone-store/compare/v0.1.8...v0.1.9) (2019-11-25)
 
 ### [0.1.8](https://github.com/arnaud-zg/standalone-store/compare/v0.1.7...v0.1.8) (2019-11-25)
