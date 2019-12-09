@@ -1,6 +1,6 @@
 {
   "name": "standalone-store",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Middleware for redux store in standalone mode for nodejs environment",
   "main": "dist/index.js",
   "module": "dist/standalone-store.esm.js",
