@@ -2760,9 +2760,9 @@ html-encoding-sniffer@^1.0.2:
   dependencies:
     whatwg-encoding "^1.0.1"
 
-http-response-status@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/http-response-status/-/http-response-status-0.1.0.tgz#2e7aea9613ba0c51a4ce6208163549826e1aadcd"
+http-response-status@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/http-response-status/-/http-response-status-0.1.2.tgz#29d2bfbeb41c4967a65b30291a3f335b7e009674"
 
 http-signature@~1.2.0:
   version "1.2.0"
@@ -5079,10 +5079,9 @@ semver@6.3.0, semver@^6.0.0, semver@^6.1.2, semver@^6.2.0, semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
 
-serialize-javascript@^1.7.0:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.9.1.tgz#cfc200aef77b600c47da9bb8149c943e798c2fdb"
-  integrity sha512-0Vb/54WJ6k5v8sSWN09S0ora+Hnr+cX40r9F170nT+mSkaxltoE/7R3OrIdBSUv1OoiobH1QoWQbCnAO+e8J1A==
+serialize-javascript@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.7.0.tgz#d6e0dfb2a3832a8c94468e6eb1db97e55a192a65"
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
@@ -5610,11 +5609,11 @@ trim-off-newlines@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
 
-ts-foursquare@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.5.1.tgz#783233adb2704a3938b35df9c53538e6be446670"
+ts-foursquare@0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.5.2.tgz#fb492678d6237d8ebdc62b2bc5a7ef9546fb4028"
   dependencies:
-    http-response-status "0.1.0"
+    http-response-status "0.1.2"
     isomorphic-fetch "2.2.1"
     path-to-regexp "^6.0.0"
     redux "4.0.4"
