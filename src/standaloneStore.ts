@@ -1,17 +1,14 @@
 import { AnyAction, StoreCreator } from 'redux'
 
-type Listener<TStoreState> = (
-  action: AnyAction | null,
-  state: TStoreState
-) => void
+type Listener<TStoreState> = (action: AnyAction, state: TStoreState) => void
 
 export class StandaloneStore<TStoreState> {
   private listeners: Array<Listener<TStoreState>>
   private store: ReturnType<StoreCreator>
-  private lastAction: AnyAction | null
+  private lastActions: AnyAction[]
 
   constructor({ store }: { store: ReturnType<StoreCreator> }) {
-    this.lastAction = null
+    this.lastActions = []
     this.listeners = []
     this.store = store
 
@@ -19,7 +16,7 @@ export class StandaloneStore<TStoreState> {
   }
 
   dispatchAction = (action: AnyAction) => {
-    this.lastAction = action
+    this.lastActions = [action]
     this.store.dispatch(action)
   }
 
@@ -28,7 +25,7 @@ export class StandaloneStore<TStoreState> {
 
     if (this.listeners.length) {
       this.listeners.forEach(listener => {
-        listener(this.lastAction, state)
+        listener(this.lastActions[0], state)
       })
     }
   }
@@ -38,6 +35,12 @@ export class StandaloneStore<TStoreState> {
   listenersPop = () => {
     if (this.listeners.length) {
       this.listeners.pop()
+    }
+  }
+
+  listenersClear = () => {
+    if (this.listeners.length) {
+      this.listeners = []
     }
   }
 

@@ -15,6 +15,18 @@ describe('StandaloneStore', () => {
     )
   })
 
+  it(`should make a snapshot of 0 listeners`, () => {
+    const standaloneStore = new StandaloneStore<TState>({ store })
+
+    standaloneStore.listenersClear()
+    expect(standaloneStore.getListeners().length === 0).toBeTruthy()
+
+    standaloneStore.subscribe(() => {})
+    standaloneStore.subscribe(() => {})
+    standaloneStore.listenersClear()
+    expect(standaloneStore.getListeners().length === 0).toBeTruthy()
+  })
+
   it(`should make a snapshot of registered listeners`, () => {
     const standaloneStore = new StandaloneStore<TState>({ store })
     standaloneStore.subscribe(() => {})

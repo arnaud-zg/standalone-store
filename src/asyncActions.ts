@@ -1,4 +1,5 @@
 import { AnyAction, createStore } from 'redux'
+import { ActionCreator, isActionOf } from 'typesafe-actions'
 import { StandaloneStore } from '.'
 
 interface IResolve<TState> {
@@ -7,30 +8,33 @@ interface IResolve<TState> {
 }
 
 export const dispatchActionsAndWaitResponse = <TState, TSelectorResponse>({
-  actions,
+  actionsDispatch,
+  actionCreatorsResolve,
   store,
   selector,
 }: {
   store: ReturnType<typeof createStore>
-  actions: AnyAction[]
+  actionsDispatch: AnyAction[]
+  actionCreatorsResolve: ActionCreator[]
   selector: (state: TState) => TSelectorResponse
 }) => {
   const standaloneStore = new StandaloneStore<TState>({ store })
 
-  return !actions.length
+  return !actionsDispatch.length
     ? Promise.reject('You should at least give one action.')
     : new Promise((resolve: ({ action, state }: IResolve<TState>) => void) => {
-        const lastAction = actions[actions.length - 1]
-        standaloneStore.subscribe((action, state) => {
-          if (action && action.type === lastAction.type) {
-            resolve({ action, state })
-          }
+        actionCreatorsResolve.forEach(actionResolve => {
+          standaloneStore.subscribe((action, state) => {
+            if (isActionOf(actionResolve, action)) {
+              resolve({ action, state })
+            }
+          })
         })
-        actions.forEach(action => {
+        actionsDispatch.forEach(action => {
           standaloneStore.dispatchAction(action)
         })
       }).then(({ state }: { state: TState }) => {
-        standaloneStore.listenersPop()
+        standaloneStore.listenersClear()
         return selector(state)
       })
 }

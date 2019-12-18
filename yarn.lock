@@ -4972,7 +4972,7 @@ rollup-plugin-terser@^5.1.2:
     "@babel/code-frame" "^7.0.0"
     jest-worker "^24.6.0"
     rollup-pluginutils "^2.8.1"
-    serialize-javascript "1.7.0"
+    serialize-javascript "^1.7.0"
     terser "^4.1.0"
 
 rollup-plugin-typescript2@^0.24.3:
@@ -5742,7 +5742,7 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typesafe-actions@5.1.0:
+typesafe-actions@5.1.0, typesafe-actions@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/typesafe-actions/-/typesafe-actions-5.1.0.tgz#9afe8b1e6a323af1fd59e6a57b11b7dd6623d2f1"
 
