@@ -53,9 +53,10 @@ If you don't know what is `configureStore` take a look at redux documentation (h
 ```js
 const getUser = () => {
   return dispatchActionsAndWaitResponse({
-    actions: [
+    actionsDispatch: [
       getUser(payload),
     ],
+    actionCreatorsResolve: [getUser]
     store: configureStore(),
     selector: userSelector,
   })
@@ -77,9 +78,10 @@ const getUser = () => {
 async getUser = () => {
   try {
     const data = await dispatchActionsAndWaitResponse({
-      actions: [
+      actionsDispatch: [
         getUser(payload),
       ],
+      actionCreatorsResolve: [getUser],
       store: configureStore(),
       selector: userSelector,
     })
@@ -114,12 +116,24 @@ For example we have an action `getUser`, we want to display this action with a p
 
 #### Subscribe to an event
 
+/!\ Don't forget to remove listener once you don't need it anymore
+
 ```js
   standaloneStore.subscribe((action, state) => {
     console.log({ action, state })
-    // Don't forget to remove listener once you don't need it anymore
-    standaloneStore.listenersPop()
   })
+```
+
+#### Unsubscribe to an event
+
+```js
+    standaloneStore.listenersPop()
+```
+
+##### Unsubscribe to all events
+
+```js
+    standaloneStore.listenersClear()
 ```
 
 ## Running the tests
