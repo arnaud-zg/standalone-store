@@ -11,7 +11,7 @@ describe('asyncAction', () => {
     dispatchActionsAndWaitResponse({
       actionsDispatch: [],
       actionCreatorsResolve: [],
-      store: configureStore(),
+      store: configureStore({ middlewares: [] }),
       selector: () => {},
     }).catch(error => {
       expect(error).toMatchSnapshot()
@@ -33,7 +33,7 @@ describe('asyncAction', () => {
         }),
       ],
       actionCreatorsResolve: [setOAuth2],
-      store: configureStore(),
+      store: configureStore({ middlewares: [] }),
       selector: lifeCredentialsSelector,
     }).then(data => {
       expect(data).toMatchSnapshot()

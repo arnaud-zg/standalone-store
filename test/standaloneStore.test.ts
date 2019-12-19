@@ -3,7 +3,7 @@ import { getType } from 'typesafe-actions'
 import { StandaloneStore } from '../src'
 
 describe('StandaloneStore', () => {
-  const store = configureStore()
+  const store = configureStore({ middlewares: [] })
   it(`should work without any listener`, () => {
     const standaloneStore = new StandaloneStore<TState>({ store })
 
