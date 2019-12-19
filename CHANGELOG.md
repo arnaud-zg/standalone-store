@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/arnaud-zg/standalone-store/compare/v0.1.13...v1.0.0) (2019-12-19)
+
+
+### 🖋 Features
+
+* **store:** use custom configure store and refact listener logic ([#51](https://github.com/arnaud-zg/standalone-store/issues/51)) ([5ad7c55](https://github.com/arnaud-zg/standalone-store/commit/5ad7c55f42f8868ce03a8d16c11e3dc33eccf1ea))
+
+
+### 🐛 Bug Fixes
+
+* error on configure store ([#50](https://github.com/arnaud-zg/standalone-store/issues/50)) ([49ea1bf](https://github.com/arnaud-zg/standalone-store/commit/49ea1bf3bbcdeb2d723caf668226092336bb8966))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v24.0.24 ([#47](https://github.com/arnaud-zg/standalone-store/issues/47)) ([b076bac](https://github.com/arnaud-zg/standalone-store/commit/b076baccf857d394bab711c297810e975e3aef82))
+* **deps:** update dependency ts-foursquare to v0.5.3 ([#49](https://github.com/arnaud-zg/standalone-store/issues/49)) ([e8818ff](https://github.com/arnaud-zg/standalone-store/commit/e8818ffc1da8394c60b814f3ac940ed141e462f6))
+* **deps:** update dependency tsdx to v0.12.0 ([#48](https://github.com/arnaud-zg/standalone-store/issues/48)) ([649f450](https://github.com/arnaud-zg/standalone-store/commit/649f450cbd1f4364daaa24bf1ddd2a1d64eaa3ca))
+
 ### [0.1.13](https://github.com/arnaud-zg/standalone-store/compare/v0.1.12...v0.1.13) (2019-12-18)
 
 
