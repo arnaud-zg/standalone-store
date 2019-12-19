@@ -113,6 +113,12 @@ const payload = { userId: '1234' }
 standaloneStore.dispatchAction(getUser(payload))
 ```
 
+#### Get all listeners
+
+```js
+standaloneStore.getListeners()
+```
+
 #### Subscribe to an event
 
 ```js
@@ -123,6 +129,12 @@ standaloneStore.subscribe((action, state) => {
     console.log({ action, state })
   }
 })
+```
+
+#### Unsubscribe to all event
+
+```js
+standaloneStore.unsubscribe()
 ```
 
 ## Migration Guides
@@ -166,7 +178,7 @@ dispatchActionsAndWaitResponse({
 
 1. In `v1.x.x` functions below are deprecated;
   - `standaloneStore.listenersPop`
-  - `standaloneStore.listenersClear`
+  - `standaloneStore.listenersClear` has been replaced by `unsubscribe`
 
 2. `StandaloneStore` take a method `configureStore` as parameter, store was removed. Pay attention about the type of `configureStore`.
 
