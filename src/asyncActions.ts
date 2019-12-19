@@ -3,7 +3,6 @@ import { ActionCreator, isActionOf } from 'typesafe-actions'
 import { StandaloneStore } from '.'
 
 interface IResolve<TState> {
-  action: AnyAction
   state: TState
 }
 
@@ -28,16 +27,16 @@ export const dispatchActionsAndWaitResponse = <TState, TSelectorResponse>({
 
   return !actionsDispatch.length
     ? Promise.reject('You should at least give one action.')
-    : new Promise((resolve: ({ action, state }: IResolve<TState>) => void) => {
+    : new Promise((resolve: ({ state }: IResolve<TState>) => void) => {
         actionCreatorsResolve.forEach(actionResolve => {
           standaloneStore.subscribe((action, state) => {
             if (isActionOf(actionResolve, action)) {
-              resolve({ action, state })
+              resolve({ state })
             }
           })
         })
         actionsDispatch.forEach(action => {
           standaloneStore.dispatchAction(action)
         })
-      }).then(({ state }: { state: TState }) => selector(state))
+      }).then(({ state }) => Promise.resolve(selector(state)))
 }

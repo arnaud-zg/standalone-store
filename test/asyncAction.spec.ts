@@ -1,14 +1,14 @@
 import {
   configureStore,
   getVenuesSearchAsync,
-  lifeCredentialsSelector,
   putCredentials,
 } from 'ts-foursquare'
+import { NStore } from 'ts-foursquare/types'
 import { dispatchActionsAndWaitResponse } from '../src'
 
 describe('asyncAction', () => {
   it(`should wait end of all actions with promise and make a snapshot of store`, done => {
-    dispatchActionsAndWaitResponse({
+    dispatchActionsAndWaitResponse<NStore.IState, NStore.IState>({
       actionsDispatch: [
         putCredentials({
           clientId: '123',
@@ -22,7 +22,7 @@ describe('asyncAction', () => {
         getVenuesSearchAsync.success,
       ],
       configureStore,
-      selector: lifeCredentialsSelector,
+      selector: state => state,
     }).then(data => {
       expect(data).toMatchSnapshot()
       done()
