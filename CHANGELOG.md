@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/arnaud-zg/standalone-store/compare/v1.1.1...v1.1.2) (2019-12-19)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency ts-foursquare to v0.6.0 ([#54](https://github.com/arnaud-zg/standalone-store/issues/54)) ([df6e624](https://github.com/arnaud-zg/standalone-store/commit/df6e624fa727d16d1e80b9faabdffad0c5be2043))
+
 ### [1.1.1](https://github.com/arnaud-zg/standalone-store/compare/v1.1.0...v1.1.1) (2019-12-19)
 
 
