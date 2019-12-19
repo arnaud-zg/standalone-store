@@ -2,7 +2,42 @@
 
 exports[`asyncAction should wait end of all actions with promise and make a snapshot of store 1`] = `
 Object {
-  "clientId": "123",
-  "clientSecret": "456",
+  "life": Object {
+    "credentials": Object {
+      "clientId": "123",
+      "clientSecret": "456",
+    },
+    "status": true,
+  },
+  "lists": Object {
+    "entities": Object {},
+  },
+  "photos": Object {
+    "entities": Object {},
+  },
+  "request": Object {
+    "getVenuesSearchAsync": Object {
+      "entityIds": Array [],
+      "error": [Error: Error 400],
+    },
+  },
+  "status": Object {
+    "getVenuesSearchAsync": Object {
+      "hasError": true,
+      "isCancelled": false,
+      "isLoading": false,
+    },
+  },
+  "venues": Object {
+    "categories": Object {},
+    "entities": Object {},
+    "likesEntities": Object {},
+    "miniVenues": Object {},
+    "nextVenues": Object {},
+    "recommendedPlaces": Object {},
+    "similarVenues": Object {},
+    "trendingEntities": Object {},
+    "venuesListed": Object {},
+  },
 }
 `;
