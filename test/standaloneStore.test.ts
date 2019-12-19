@@ -17,9 +17,11 @@ describe('StandaloneStore', () => {
   it(`should test listener`, () => {
     const standaloneStore = new StandaloneStore<TState>({ configureStore })
 
-    expect(standaloneStore.getListener() === null).toBeTruthy()
+    expect(standaloneStore.getListeners().length).toEqual(0)
     standaloneStore.subscribe(() => {})
-    expect(standaloneStore.getListener() === null).toBeFalsy()
+    expect(standaloneStore.getListeners().length).toEqual(1)
+    standaloneStore.unsubscribe()
+    expect(standaloneStore.getListeners().length).toEqual(0)
   })
 
   it(`should make a snapshot of store after of action: putCredentials`, done => {

@@ -15,7 +15,7 @@ type ConfigureStore = ({
 }) => ReturnType<StoreCreator>
 
 export class StandaloneStore<TStoreState> {
-  private listener: Listener<TStoreState> | null = null
+  private listeners: Listener<TStoreState>[] = []
   private store: ReturnType<StoreCreator>
 
   constructor({ configureStore }: { configureStore: ConfigureStore }) {
@@ -31,17 +31,23 @@ export class StandaloneStore<TStoreState> {
   ) => (action: AnyAction) => {
     const actionToDispatch = next(action)
 
-    if (this.listener) {
+    if (this.listeners.length) {
       const state = store.getState()
-      this.listener(action, state)
+      this.listeners.forEach(listener => {
+        listener(action, state)
+      })
     }
 
     return actionToDispatch
   }
 
-  getListener = () => this.listener
+  getListeners = () => this.listeners
 
   subscribe = (listener: Listener<TStoreState>) => {
-    this.listener = listener
+    this.listeners = this.listeners.concat(listener)
+  }
+
+  unsubscribe = () => {
+    this.listeners = []
   }
 }
