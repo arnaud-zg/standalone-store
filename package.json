@@ -45,6 +45,6 @@
   },
   "dependencies": {
     "redux": "4.0.4",
-    "typesafe-actions": "^5.1.0"
+    "typesafe-actions": "5.1.0"
   }
 }
