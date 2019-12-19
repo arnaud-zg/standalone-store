@@ -1,50 +1,47 @@
-import { AnyAction, StoreCreator } from 'redux'
+import {
+  AnyAction,
+  Dispatch,
+  Middleware,
+  MiddlewareAPI,
+  StoreCreator,
+} from 'redux'
 
 type Listener<TStoreState> = (action: AnyAction, state: TStoreState) => void
 
+type ConfigureStore = ({
+  middlewares,
+}: {
+  middlewares: Middleware[]
+}) => ReturnType<StoreCreator>
+
 export class StandaloneStore<TStoreState> {
-  private listeners: Array<Listener<TStoreState>>
+  private listener: Listener<TStoreState> | null = null
   private store: ReturnType<StoreCreator>
-  private lastActions: AnyAction[]
 
-  constructor({ store }: { store: ReturnType<StoreCreator> }) {
-    this.lastActions = []
-    this.listeners = []
-    this.store = store
-
-    this.store.subscribe(this.storeUpdate)
+  constructor({ configureStore }: { configureStore: ConfigureStore }) {
+    this.store = configureStore({ middlewares: [this.afterActionMiddleware] })
   }
 
   dispatchAction = (action: AnyAction) => {
-    this.lastActions = [action]
     this.store.dispatch(action)
   }
 
-  storeUpdate = () => {
-    const state = this.store.getState() as TStoreState
+  afterActionMiddleware = (store: MiddlewareAPI) => (
+    next: Dispatch<AnyAction>
+  ) => (action: AnyAction) => {
+    const actionToDispatch = next(action)
 
-    if (this.listeners.length) {
-      this.listeners.forEach(listener => {
-        listener(this.lastActions[0], state)
-      })
+    if (this.listener) {
+      const state = store.getState()
+      this.listener(action, state)
     }
+
+    return actionToDispatch
   }
 
-  getListeners = () => this.listeners
-
-  listenersPop = () => {
-    if (this.listeners.length) {
-      this.listeners.pop()
-    }
-  }
-
-  listenersClear = () => {
-    if (this.listeners.length) {
-      this.listeners = []
-    }
-  }
+  getListener = () => this.listener
 
   subscribe = (listener: Listener<TStoreState>) => {
-    this.listeners.push(listener)
+    this.listener = listener
   }
 }

@@ -1,38 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StandaloneStore should make a snapshot of registered listeners 1`] = `
-Array [
-  [Function],
-]
-`;
-
 exports[`StandaloneStore should make a snapshot of store after of action: putCredentials 1`] = `
 Object {
-  "life": Object {
-    "credentials": Object {
+  "action": Object {
+    "payload": Object {
       "clientId": "123",
       "clientSecret": "456",
     },
-    "status": true,
+    "type": "PUT_CREDENTIALS",
   },
-  "lists": Object {
-    "entities": Object {},
-  },
-  "photos": Object {
-    "entities": Object {},
-  },
-  "request": Object {},
-  "status": Object {},
-  "venues": Object {
-    "categories": Object {},
-    "entities": Object {},
-    "likesEntities": Object {},
-    "miniVenues": Object {},
-    "nextVenues": Object {},
-    "recommendedPlaces": Object {},
-    "similarVenues": Object {},
-    "trendingEntities": Object {},
-    "venuesListed": Object {},
+  "state": Object {
+    "life": Object {
+      "credentials": Object {
+        "clientId": "123",
+        "clientSecret": "456",
+      },
+      "status": true,
+    },
+    "lists": Object {
+      "entities": Object {},
+    },
+    "photos": Object {
+      "entities": Object {},
+    },
+    "request": Object {},
+    "status": Object {},
+    "venues": Object {
+      "categories": Object {},
+      "entities": Object {},
+      "likesEntities": Object {},
+      "miniVenues": Object {},
+      "nextVenues": Object {},
+      "recommendedPlaces": Object {},
+      "similarVenues": Object {},
+      "trendingEntities": Object {},
+      "venuesListed": Object {},
+    },
   },
 }
 `;
