@@ -5263,6 +5263,13 @@ stack-utils@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-1.0.2.tgz#33eba3897788558bebfc2db059dc158ec36cebb8"
 
+standalone-store@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/standalone-store/-/standalone-store-1.1.1.tgz#1f0f7083f4bbacbfb75fc564ad52eed77314bf52"
+  dependencies:
+    redux "4.0.4"
+    typesafe-actions "^5.1.0"
+
 standard-version@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/standard-version/-/standard-version-7.0.1.tgz#33e950cf5c571ae0358a7ffae2292aa4547dc504"
@@ -5592,9 +5599,9 @@ trim-off-newlines@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
 
-ts-foursquare@0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.5.3.tgz#658dc37a63d02f3e830f68fe28024a6cd0dcb96c"
+ts-foursquare@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.6.0.tgz#8ee7b32ff01c75c1b14fa630d3ed037f4226570f"
   dependencies:
     http-response-status "0.1.2"
     isomorphic-fetch "2.2.1"
@@ -5603,6 +5610,7 @@ ts-foursquare@0.5.3:
     redux-devtools-extension "2.13.8"
     redux-observable "1.2.0"
     rxjs "6.5.3"
+    standalone-store "1.1.1"
     typesafe-actions "5.1.0"
 
 ts-jest@^24.0.2:
