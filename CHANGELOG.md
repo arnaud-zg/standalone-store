@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/arnaud-zg/standalone-store/compare/v1.0.0...v1.1.0) (2019-12-19)
+
+
+### 🖋 Features
+
+* **listeners:** handle multiple listeners ([#52](https://github.com/arnaud-zg/standalone-store/issues/52)) ([712e730](https://github.com/arnaud-zg/standalone-store/commit/712e730b584f0f9c1c22245f24b732337d03c8af))
+
 ## [1.0.0](https://github.com/arnaud-zg/standalone-store/compare/v0.1.13...v1.0.0) (2019-12-19)
 
 
