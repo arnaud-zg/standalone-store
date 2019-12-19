@@ -1,11 +1,10 @@
 import { configureStore, putCredentials, TState } from 'ts-foursquare'
-import { getType } from 'typesafe-actions'
+import { isActionOf } from 'typesafe-actions'
 import { StandaloneStore } from '../src'
 
 describe('StandaloneStore', () => {
-  const store = configureStore({ middlewares: [] })
   it(`should work without any listener`, () => {
-    const standaloneStore = new StandaloneStore<TState>({ store })
+    const standaloneStore = new StandaloneStore<TState>({ configureStore })
 
     standaloneStore.dispatchAction(
       putCredentials({
@@ -15,37 +14,20 @@ describe('StandaloneStore', () => {
     )
   })
 
-  it(`should make a snapshot of 0 listeners`, () => {
-    const standaloneStore = new StandaloneStore<TState>({ store })
+  it(`should test listener`, () => {
+    const standaloneStore = new StandaloneStore<TState>({ configureStore })
 
-    standaloneStore.listenersClear()
-    expect(standaloneStore.getListeners().length === 0).toBeTruthy()
-
+    expect(standaloneStore.getListener() === null).toBeTruthy()
     standaloneStore.subscribe(() => {})
-    standaloneStore.subscribe(() => {})
-    standaloneStore.listenersClear()
-    expect(standaloneStore.getListeners().length === 0).toBeTruthy()
-  })
-
-  it(`should make a snapshot of registered listeners`, () => {
-    const standaloneStore = new StandaloneStore<TState>({ store })
-    standaloneStore.subscribe(() => {})
-
-    const listeners = standaloneStore.getListeners()
-    expect(listeners).toMatchSnapshot()
-
-    standaloneStore.listenersPop()
-    standaloneStore.listenersPop()
+    expect(standaloneStore.getListener() === null).toBeFalsy()
   })
 
   it(`should make a snapshot of store after of action: putCredentials`, done => {
-    const standaloneStore = new StandaloneStore<TState>({ store })
+    const standaloneStore = new StandaloneStore<TState>({ configureStore })
 
     standaloneStore.subscribe((action, state) => {
-      expect(state).toMatchSnapshot()
-
-      if (action && action.type === getType(putCredentials)) {
-        standaloneStore.listenersPop()
+      if (isActionOf(putCredentials, action)) {
+        expect({ action, state }).toMatchSnapshot()
         done()
       }
     })

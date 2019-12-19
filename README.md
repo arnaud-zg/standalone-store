@@ -46,6 +46,12 @@ Once you have instanciated your store, you can use `standalone-store` as a middl
 
 If you don't know what is `configureStore` take a look at redux documentation (https://redux.js.org/recipes/configuring-your-store#the-solution-configurestore).
 
+In addition to redux documentation, `configureStore` need a parameter.
+
+```ts
+type ConfigureStore = ({ middlewares }: { middlewares: Middleware[] }) => ReturnType<StoreCreator>
+```
+
 ## Simple
 
 ### Callback
@@ -53,11 +59,9 @@ If you don't know what is `configureStore` take a look at redux documentation (h
 ```js
 const getUser = () => {
   return dispatchActionsAndWaitResponse({
-    actionsDispatch: [
-      getUser(payload),
-    ],
+    actionsDispatch: [getUser(payload)],
     actionCreatorsResolve: [getUser]
-    store: configureStore(),
+    configureStore,
     selector: userSelector,
   })
   .then(data => {
@@ -67,7 +71,7 @@ const getUser = () => {
     console.log(error)
   })
   .finally(() => {
-    // Do something ...
+    console.log('done')
   })
 }
 ```
@@ -75,14 +79,12 @@ const getUser = () => {
 ### Async / Await
 
 ```js
-async getUser = () => {
+const getUser = async () => {
   try {
     const data = await dispatchActionsAndWaitResponse({
-      actionsDispatch: [
-        getUser(payload),
-      ],
+      actionsDispatch: [getUser(payload)],
       actionCreatorsResolve: [getUser],
-      store: configureStore(),
+      configureStore,
       selector: userSelector,
     })
     console.log(data)
@@ -91,7 +93,7 @@ async getUser = () => {
     console.log(error)
   }
   finally {
-    // Do something
+    console.log('done')
   }
 }
 ```
@@ -99,8 +101,7 @@ async getUser = () => {
 ### Advanced
 
 ```js
-  const store = configureStore()
-  const standaloneStore = new StandaloneStore<TState>({ store })
+const standaloneStore = new StandaloneStore<TState>({ configureStore })
 ```
 
 #### Dispatch an redux action
@@ -108,32 +109,74 @@ async getUser = () => {
 For example we have an action `getUser`, we want to display this action with a payload.
 
 ```js
-  const payload = { userId: '1234' }
-  standaloneStore.dispatchAction(
-    getUser(payload)
-  )
+const payload = { userId: '1234' }
+standaloneStore.dispatchAction(getUser(payload))
 ```
 
 #### Subscribe to an event
 
-/!\ Don't forget to remove listener once you don't need it anymore
-
 ```js
-  standaloneStore.subscribe((action, state) => {
+import { isActionOf } from 'typesafe-actions'
+
+standaloneStore.subscribe((action, state) => {
+  if (isActionOf(getUser, action)) {
     console.log({ action, state })
-  })
+  }
+})
 ```
 
-#### Unsubscribe to an event
+## Migration Guides
 
-```js
-    standaloneStore.listenersPop()
+### v0.1.x to v1.x.x
+
+`ConfigureStore` has been added with specific parameter, normally it should be a function which encapsulates store creation logic, in addition of that, it can accept a list of middleware to be applied.
+
+1. If you don't need to add any extra middleware, just pass an empty array (`configureStore({ middlewares: []})`).
+2. Make sure your `configureStore` match with given type.
+
+```ts
+type ConfigureStore = ({ middlewares }: { middlewares: Middleware[] }) => ReturnType<StoreCreator>
 ```
 
-##### Unsubscribe to all events
+**Breaking changes:**
 
-```js
-    standaloneStore.listenersClear()
+#### `dispatchActionsAndWaitResponse`
+
+1. In `v1.x.x`, parameter`store` was replace by `configureStore`;
+
+```ts
+// before
+dispatchActionsAndWaitResponse({
+  actionsDispatch: [getUser(payload)],
+  actionCreatorsResolve: [getUser]
+  store: configureStore(),
+  selector: userSelector,
+})
+
+// after
+dispatchActionsAndWaitResponse({
+  actionsDispatch: [getUser(payload)],
+  actionCreatorsResolve: [getUser]
+  configureStore,
+  selector: userSelector,
+})
+```
+
+#### Standalone Store
+
+1. In `v1.x.x` functions below are deprecated;
+  - `standaloneStore.listenersPop`
+  - `standaloneStore.listenersClear`
+
+2. `StandaloneStore` take a method `configureStore` as parameter, store was removed. Pay attention about the type of `configureStore`.
+
+```ts
+// before
+const store = configureStore()
+const standaloneStore = new StandaloneStore<TState>({ store })
+
+// after
+const standaloneStore = new StandaloneStore()<TState>({ configureStore })
 ```
 
 ## Running the tests
