@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/arnaud-zg/standalone-store/compare/v1.1.0...v1.1.1) (2019-12-19)
+
+
+### 🐛 Bug Fixes
+
+* **store:** resolve state only ([#53](https://github.com/arnaud-zg/standalone-store/issues/53)) ([1670018](https://github.com/arnaud-zg/standalone-store/commit/167001829214f7fed7b7bffbc5f554a2d7e60f63))
+
 ## [1.1.0](https://github.com/arnaud-zg/standalone-store/compare/v1.0.0...v1.1.0) (2019-12-19)
 
 
