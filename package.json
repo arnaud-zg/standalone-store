@@ -44,7 +44,7 @@
     "typescript": "3.7.4"
   },
   "dependencies": {
-    "redux": "4.0.4",
+    "redux": "4.0.5",
     "typesafe-actions": "5.1.0"
   }
 }
