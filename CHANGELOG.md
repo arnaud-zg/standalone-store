@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/arnaud-zg/standalone-store/compare/v1.1.2...v1.1.3) (2019-12-29)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v24.0.25 ([#59](https://github.com/arnaud-zg/standalone-store/issues/59)) ([a94f529](https://github.com/arnaud-zg/standalone-store/commit/a94f52921a03f1ea9b433da76b33cc8159fb0226))
+* **deps:** update dependency ts-foursquare to v0.6.1 ([#58](https://github.com/arnaud-zg/standalone-store/issues/58)) ([d16ed44](https://github.com/arnaud-zg/standalone-store/commit/d16ed443ce4d68c7d3067ae1d94fdf244f2e1f11))
+* **deps:** update dependency tsdx to v0.12.1 ([#60](https://github.com/arnaud-zg/standalone-store/issues/60)) ([7030a5d](https://github.com/arnaud-zg/standalone-store/commit/7030a5dfa55441844665da40b4b695df9a47e5e0))
+* **deps:** update dependency typescript to v3.7.4 ([#56](https://github.com/arnaud-zg/standalone-store/issues/56)) ([ab2ad61](https://github.com/arnaud-zg/standalone-store/commit/ab2ad61597692a74ec8da5bafd920942c25cc46d))
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency redux to v4.0.5 ([#57](https://github.com/arnaud-zg/standalone-store/issues/57)) ([907ab7b](https://github.com/arnaud-zg/standalone-store/commit/907ab7bf56e237bac2b99979a12dc34d65fbc376))
+
 ### [1.1.2](https://github.com/arnaud-zg/standalone-store/compare/v1.1.1...v1.1.2) (2019-12-19)
 
 
