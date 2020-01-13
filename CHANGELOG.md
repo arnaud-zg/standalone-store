@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/arnaud-zg/standalone-store/compare/v1.1.4...v1.1.5) (2020-01-13)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency husky to v4.0.6 ([#71](https://github.com/arnaud-zg/standalone-store/issues/71)) ([f28d593](https://github.com/arnaud-zg/standalone-store/commit/f28d5938631d6117ec6e3ad5ddf815171901bd2d))
+* **deps:** update dependency husky to v4.0.7 ([#72](https://github.com/arnaud-zg/standalone-store/issues/72)) ([952ff9c](https://github.com/arnaud-zg/standalone-store/commit/952ff9c092fe5e6f2397aa0bd419087bdbf019d5))
+* **deps:** update dependency ts-foursquare to v0.6.5 ([#69](https://github.com/arnaud-zg/standalone-store/issues/69)) ([ce7478d](https://github.com/arnaud-zg/standalone-store/commit/ce7478d9bf8ca402e0d78096b86f407dbc40baba))
+* **deps:** update dependency ts-foursquare to v0.6.6 ([#73](https://github.com/arnaud-zg/standalone-store/issues/73)) ([eaea82a](https://github.com/arnaud-zg/standalone-store/commit/eaea82a45e19643d5ac9660aeef4860056eab81d))
+* **deps:** update dependency tsdx to v0.12.3 ([#74](https://github.com/arnaud-zg/standalone-store/issues/74)) ([9ccf238](https://github.com/arnaud-zg/standalone-store/commit/9ccf238d06fc97d08f3db0f34a7d6667c367212a))
+* **deps:** update node.js to v10.18.1 ([#70](https://github.com/arnaud-zg/standalone-store/issues/70)) ([78916d8](https://github.com/arnaud-zg/standalone-store/commit/78916d88e7257059d4cc6076543f3db4058f4d1b))
+
 ### [1.1.4](https://github.com/arnaud-zg/standalone-store/compare/v1.1.3...v1.1.4) (2020-01-09)
 
 
