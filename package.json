@@ -38,7 +38,7 @@
     "codecov": "3.6.1",
     "husky": "4.0.7",
     "standard-version": "7.0.1",
-    "ts-foursquare": "0.6.5",
+    "ts-foursquare": "0.6.6",
     "tsdx": "0.12.1",
     "tslib": "1.10.0",
     "typescript": "3.7.4"
