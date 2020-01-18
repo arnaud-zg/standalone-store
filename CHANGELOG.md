@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://github.com/arnaud-zg/standalone-store/compare/v1.1.5...v1.1.6) (2020-01-18)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v24.9.0 ([#78](https://github.com/arnaud-zg/standalone-store/issues/78)) ([42d17f2](https://github.com/arnaud-zg/standalone-store/commit/42d17f2dfe9fde350726c656fb19094955e49c54))
+* **deps:** update dependency husky to v4.0.10 ([#79](https://github.com/arnaud-zg/standalone-store/issues/79)) ([663b4ee](https://github.com/arnaud-zg/standalone-store/commit/663b4eef279f5e7c3797a5c524bfecc8dd47be96))
+* **deps:** update dependency husky to v4.0.8 ([#76](https://github.com/arnaud-zg/standalone-store/issues/76)) ([8bd9d4e](https://github.com/arnaud-zg/standalone-store/commit/8bd9d4e30f5335b227d0f0143ac36ebaadbaafe9))
+* **deps:** update dependency husky to v4.0.9 ([#77](https://github.com/arnaud-zg/standalone-store/issues/77)) ([f23c56c](https://github.com/arnaud-zg/standalone-store/commit/f23c56c8ac2386fb5407b1ca55e8158a83569539))
+* **deps:** update dependency ts-foursquare to v0.7.0 ([#75](https://github.com/arnaud-zg/standalone-store/issues/75)) ([7b8c4b1](https://github.com/arnaud-zg/standalone-store/commit/7b8c4b1dcccc0c811a99a4862ba72aef35b240e1))
+* **deps:** update dependency ts-foursquare to v0.7.1 ([#80](https://github.com/arnaud-zg/standalone-store/issues/80)) ([ccb2ef1](https://github.com/arnaud-zg/standalone-store/commit/ccb2ef171f868ce1a7d6749ed264f8689e45654b))
+* **deps:** update dependency typescript to v3.7.5 ([#81](https://github.com/arnaud-zg/standalone-store/issues/81)) ([a3cb05e](https://github.com/arnaud-zg/standalone-store/commit/a3cb05e7359377b4d8fd8d7283b1f58629cb253f))
+
 ### [1.1.5](https://github.com/arnaud-zg/standalone-store/compare/v1.1.4...v1.1.5) (2020-01-13)
 
 
