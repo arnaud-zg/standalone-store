@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.7](https://github.com/arnaud-zg/standalone-store/compare/v1.1.6...v1.1.7) (2020-01-27)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v24.9.1 ([#85](https://github.com/arnaud-zg/standalone-store/issues/85)) ([4ef2b7b](https://github.com/arnaud-zg/standalone-store/commit/4ef2b7ba37ee392747524e12064809b78306c22e))
+* **deps:** update dependency @types/jest to v25 ([#88](https://github.com/arnaud-zg/standalone-store/issues/88)) ([241053f](https://github.com/arnaud-zg/standalone-store/commit/241053f07f56a27d489b3fd615c21b179d635029))
+* **deps:** update dependency codecov to v3.6.2 ([#86](https://github.com/arnaud-zg/standalone-store/issues/86)) ([0ccfcd3](https://github.com/arnaud-zg/standalone-store/commit/0ccfcd394bcdc60fb48c17943954faaf9e6b0eba))
+* **deps:** update dependency husky to v4.1.0 ([#82](https://github.com/arnaud-zg/standalone-store/issues/82)) ([15bb43a](https://github.com/arnaud-zg/standalone-store/commit/15bb43ad8083749599241bbb52c9ef7a355aa69d))
+* **deps:** update dependency husky to v4.2.0 ([#84](https://github.com/arnaud-zg/standalone-store/issues/84)) ([17419e8](https://github.com/arnaud-zg/standalone-store/commit/17419e85396080c8df88ea29e582fafcd621d1d4))
+* **deps:** update dependency husky to v4.2.1 ([#87](https://github.com/arnaud-zg/standalone-store/issues/87)) ([fb54000](https://github.com/arnaud-zg/standalone-store/commit/fb540003917d0fc35dae532576fcc24d793c3ae0))
+* **deps:** update dependency standard-version to v7.1.0 ([#83](https://github.com/arnaud-zg/standalone-store/issues/83)) ([dd6e212](https://github.com/arnaud-zg/standalone-store/commit/dd6e2124f1b402957259cc38d318023a68200313))
+
 ### [1.1.6](https://github.com/arnaud-zg/standalone-store/compare/v1.1.5...v1.1.6) (2020-01-18)
 
 
