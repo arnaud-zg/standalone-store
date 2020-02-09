@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.9](https://github.com/arnaud-zg/standalone-store/compare/v1.1.8...v1.1.9) (2020-02-09)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v25.1.2 ([#93](https://github.com/arnaud-zg/standalone-store/issues/93)) ([468034c](https://github.com/arnaud-zg/standalone-store/commit/468034c4c82cc3a1c0822a1c62f22cc875f07937))
+* **deps:** update dependency codecov to v3.6.5 ([#94](https://github.com/arnaud-zg/standalone-store/issues/94)) ([1cd2b1a](https://github.com/arnaud-zg/standalone-store/commit/1cd2b1a658eb1159c23e69f53f0e4e0e0c85b923))
+* **deps:** update node.js to v10.19.0 ([#92](https://github.com/arnaud-zg/standalone-store/issues/92)) ([c3c8cac](https://github.com/arnaud-zg/standalone-store/commit/c3c8cacbd2950c8c7045cf1fe30c4786e24b4f9a))
+
 ### [1.1.8](https://github.com/arnaud-zg/standalone-store/compare/v1.1.7...v1.1.8) (2020-02-04)
 
 
