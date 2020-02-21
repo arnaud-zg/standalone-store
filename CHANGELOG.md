@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.10](https://github.com/arnaud-zg/standalone-store/compare/v1.1.9...v1.1.10) (2020-02-21)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v25.1.3 ([#97](https://github.com/arnaud-zg/standalone-store/issues/97)) ([503177e](https://github.com/arnaud-zg/standalone-store/commit/503177e5c3778aff75561d5c9907c13e98f64fa2))
+* **deps:** update dependency husky to v4.2.2 ([#95](https://github.com/arnaud-zg/standalone-store/issues/95)) ([4528106](https://github.com/arnaud-zg/standalone-store/commit/4528106f073161da7469d120dcf87ca7739f6e64))
+* **deps:** update dependency husky to v4.2.3 ([#96](https://github.com/arnaud-zg/standalone-store/issues/96)) ([1c2c340](https://github.com/arnaud-zg/standalone-store/commit/1c2c340f188c9e15c83897484ec05677a3da8f1c))
+* **deps:** update dependency tslib to v1.11.0 ([#98](https://github.com/arnaud-zg/standalone-store/issues/98)) ([d8449b3](https://github.com/arnaud-zg/standalone-store/commit/d8449b3722ce8e5405b3ea059d39405ff6820c7d))
+* **deps:** update dependency typescript to v3.8.2 ([#99](https://github.com/arnaud-zg/standalone-store/issues/99)) ([584fa38](https://github.com/arnaud-zg/standalone-store/commit/584fa38a059470e3a3dc1940762e7d131e784925))
+
 ### [1.1.9](https://github.com/arnaud-zg/standalone-store/compare/v1.1.8...v1.1.9) (2020-02-09)
 
 
