@@ -2939,9 +2939,9 @@ http-proxy-agent@^4.0.0:
     agent-base "6"
     debug "4"
 
-http-response-status@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/http-response-status/-/http-response-status-1.0.1.tgz#7695deeee2efe3fa80464d01a301314cbaceaf9d"
+http-response-status@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/http-response-status/-/http-response-status-1.0.6.tgz#55ddd546ec6d4b0176ed75be06414d7637fa6174"
 
 http-signature@~1.2.0:
   version "1.2.0"
@@ -4943,15 +4943,7 @@ redent@^2.0.0:
     indent-string "^3.0.0"
     strip-indent "^2.0.0"
 
-redux-devtools-extension@2.13.8:
-  version "2.13.8"
-  resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.8.tgz#37b982688626e5e4993ff87220c9bbb7cd2d96e1"
-
-redux-observable@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/redux-observable/-/redux-observable-1.2.0.tgz#ff51b6c6be2598e9b5e89fc36639186bb0e669c7"
-
-redux@*, redux@4.0.4:
+redux@*:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.4.tgz#4ee1aeb164b63d6a1bcc57ae4aa0b6e6fa7a3796"
   dependencies:
@@ -5476,13 +5468,6 @@ stack-utils@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-1.0.2.tgz#33eba3897788558bebfc2db059dc158ec36cebb8"
 
-standalone-store@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/standalone-store/-/standalone-store-1.1.5.tgz#d31c95ef7141eaacb6500b0f2ff4030d7d79f6b5"
-  dependencies:
-    redux "4.0.5"
-    typesafe-actions "5.1.0"
-
 standard-version@7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/standard-version/-/standard-version-7.1.0.tgz#021dd79eac749548677c876d5a94791df50f1f36"
@@ -5845,19 +5830,14 @@ trim-off-newlines@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
 
-ts-foursquare@0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-0.7.1.tgz#6e8984bfb6a1bff6097caa14859be7d1361ad9f0"
+ts-foursquare@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ts-foursquare/-/ts-foursquare-1.0.0.tgz#660ff835a3df3706ffe57857e1caddfb45c970b2"
   dependencies:
-    http-response-status "1.0.1"
+    http-response-status "1.0.6"
     isomorphic-fetch "2.2.1"
     path-to-regexp "^6.0.0"
-    redux "4.0.4"
-    redux-devtools-extension "2.13.8"
-    redux-observable "1.2.0"
     rxjs "6.5.4"
-    standalone-store "1.1.5"
-    typesafe-actions "5.1.0"
 
 ts-jest@^24.0.2:
   version "24.1.0"
