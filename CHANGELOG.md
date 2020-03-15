@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.11](https://github.com/arnaud-zg/standalone-store/compare/v1.1.10...v1.1.11) (2020-03-15)
+
+
+### 📦 Build System
+
+* **deps:** bump acorn from 5.7.3 to 5.7.4 ([#104](https://github.com/arnaud-zg/standalone-store/issues/104)) ([77e7283](https://github.com/arnaud-zg/standalone-store/commit/77e728318d21b2fd8287bfe4c749edffd145f03b))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v25.1.4 ([#103](https://github.com/arnaud-zg/standalone-store/issues/103)) ([f93fb4c](https://github.com/arnaud-zg/standalone-store/commit/f93fb4c8d9823ff2126013eecb435c6a2d6d9c3e))
+* **deps:** update dependency tslib to v1.11.1 ([#100](https://github.com/arnaud-zg/standalone-store/issues/100)) ([095fbba](https://github.com/arnaud-zg/standalone-store/commit/095fbbacdc08cd9ac7ca8d867b904455705fe344))
+* **deps:** update dependency typescript to v3.8.3 ([#102](https://github.com/arnaud-zg/standalone-store/issues/102)) ([a39bb5c](https://github.com/arnaud-zg/standalone-store/commit/a39bb5ca29e0fb4f0545949b4b300127b6a452eb))
+
 ### [1.1.10](https://github.com/arnaud-zg/standalone-store/compare/v1.1.9...v1.1.10) (2020-02-21)
 
 
