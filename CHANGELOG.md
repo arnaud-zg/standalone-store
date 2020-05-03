@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.13](https://github.com/arnaud-zg/standalone-store/compare/v1.1.12...v1.1.13) (2020-05-03)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency husky to v4.2.5 ([#109](https://github.com/arnaud-zg/standalone-store/issues/109)) ([c310f6c](https://github.com/arnaud-zg/standalone-store/commit/c310f6c1be5996cc05e43326ffc8bb6469164a38))
+* **deps:** update dependency tsdx to v0.13.2 ([#105](https://github.com/arnaud-zg/standalone-store/issues/105)) ([659e705](https://github.com/arnaud-zg/standalone-store/commit/659e7054f3bd86f5ab8e7133c96e9c18ae1a26dc))
+* **deps:** update node.js to v10.20.0 ([#108](https://github.com/arnaud-zg/standalone-store/issues/108)) ([c00cc50](https://github.com/arnaud-zg/standalone-store/commit/c00cc508cb09bb5dc857d92748b25de5900ae126))
+* **deps:** update node.js to v10.20.1 ([#110](https://github.com/arnaud-zg/standalone-store/issues/110)) ([5914704](https://github.com/arnaud-zg/standalone-store/commit/5914704575a6d34d9a950a4d463804616fba4d68))
+* update typescript config ([#111](https://github.com/arnaud-zg/standalone-store/issues/111)) ([12ab60c](https://github.com/arnaud-zg/standalone-store/commit/12ab60c08eca5d98057ef704157fad9f5da58c97))
+
 ### [1.1.12](https://github.com/arnaud-zg/standalone-store/compare/v1.1.11...v1.1.12) (2020-04-07)
 
 
