@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.14](https://github.com/arnaud-zg/standalone-store/compare/v1.1.13...v1.1.14) (2020-05-16)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v25.2.2 ([#116](https://github.com/arnaud-zg/standalone-store/issues/116)) ([75afac9](https://github.com/arnaud-zg/standalone-store/commit/75afac9a88c84f330ca388d5f8fee1c3e01baced))
+* **deps:** update dependency standard-version to v8 ([#113](https://github.com/arnaud-zg/standalone-store/issues/113)) ([4e6adae](https://github.com/arnaud-zg/standalone-store/commit/4e6adaee5f57f885287e4c99036a6a2460ace30c))
+* **deps:** update dependency tslib to v1.11.2 ([#112](https://github.com/arnaud-zg/standalone-store/issues/112)) ([e00c8eb](https://github.com/arnaud-zg/standalone-store/commit/e00c8eb24a8b973c59f8ac0cbec1cf3ec4832405))
+* **deps:** update dependency tslib to v1.12.0 ([#114](https://github.com/arnaud-zg/standalone-store/issues/114)) ([1200cbc](https://github.com/arnaud-zg/standalone-store/commit/1200cbc3f1198f2495734f07aef74dbfe80666ea))
+* **deps:** update dependency tslib to v2 ([#118](https://github.com/arnaud-zg/standalone-store/issues/118)) ([2709afd](https://github.com/arnaud-zg/standalone-store/commit/2709afd41bdc060395521c51331f01a5c8f87e2e))
+* **deps:** update dependency typescript to v3.9.2 ([#115](https://github.com/arnaud-zg/standalone-store/issues/115)) ([406a8b5](https://github.com/arnaud-zg/standalone-store/commit/406a8b5770de742cab7a1ca81e86ae7c457fab50))
+
 ### [1.1.13](https://github.com/arnaud-zg/standalone-store/compare/v1.1.12...v1.1.13) (2020-05-03)
 
 
