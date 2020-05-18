@@ -35,7 +35,7 @@
   "devDependencies": {
     "@types/jest": "25.2.2",
     "@types/redux": "3.6.0",
-    "codecov": "3.6.5",
+    "codecov": "3.7.0",
     "husky": "4.2.5",
     "standard-version": "8.0.0",
     "ts-foursquare": "0.7.1",
